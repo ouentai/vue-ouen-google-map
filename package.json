@@ -1,0 +1,31 @@
+{
+  "name": "vue-ouen-google-map",
+  "version": "1.0.0",
+  "description": "useful vue component for google map",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "vue": "^2.6.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ouentai/vue-ouen-google-map.git"
+  },
+  "keywords": [
+    "vue",
+    "google",
+    "map",
+    "component"
+  ],
+  "author": "ouentai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ouentai/vue-ouen-google-map/issues"
+  },
+  "homepage": "https://github.com/ouentai/vue-ouen-google-map#readme"
+}
