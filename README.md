@@ -1,4 +1,4 @@
-# @ouen/vue_google_maps
+# @ouen/vue-google-maps
 
 ## google_maps_api for @vue/cli
 
@@ -10,9 +10,11 @@
 - import & register components
   ``` demo.vue
   <script>
-  import GRoot    from './GmapMap'            ;
-  import GMarker  from './GmapMarker'         ;
-  import GLPicker from './GmapLocationPicker' ;
+  import {
+    GmapMap            as GRoot    ,
+    GmapMarker         as GMarker  ,
+    GmapLocationPicker as GLPicker ,
+  } from 'vue-ouen-google-map'
 
   export default {
     components: {
@@ -54,7 +56,7 @@
     </template>
     ```
 
-  - want coordinate
+  - want coordinate by click map
     ``` demo.vue
     <template>
       <GRoot>
@@ -130,7 +132,7 @@
 
   - example
     ``` .javascript
-    import loader from './lib/GmapApiLoader' ;
+    import loader from 'vue-ouen-google-map/lib/GmapApiLoader' ;
 
     const options={ apiKey : "your api key" , language : "ja" };
     // same as GmapMap options
