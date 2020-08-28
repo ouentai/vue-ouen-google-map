@@ -1,9 +1,10 @@
 # @ouen/vue-google-maps
 
-## google_maps_api for @vue/cli
-
-
 ## Basic usage / Documentation
+
+### Install
+- npm
+  `npm install https://github.com/ouentai/vue-ouen-google-map`
 
 ### Quickstart (Webpack, Vue-cli, Nuxt)
 
@@ -12,14 +13,18 @@
   <script>
   import {
     GmapMap            as GRoot    ,
+    GmapCircle         as GCircle  ,
     GmapMarker         as GMarker  ,
+    GmapInfoWindow     as GIWindow ,
     GmapLocationPicker as GLPicker ,
   } from 'vue-ouen-google-map'
 
   export default {
     components: {
       GRoot    ,
+      GCircle  ,
       GMarker  ,
+      GIWindow ,
       GLPicker ,
     },
   };
@@ -40,7 +45,7 @@
 
 
 - usage point
-  - GmapMap component must be ***top level*** of this package as google_maps_api container.
+  - GmapMap component must be ***top level*** of this package items as google-maps-api container.
   - If you need, other component can be in GmapMap component as vue slot.
   - GmapMap : Discribe a google map.
   - GmapMarker : Add a marker to map of GmapMap. With `v-for`, it's easy way to create many marker.
